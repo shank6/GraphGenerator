@@ -1,0 +1,48 @@
+# depslib dependency file v1.0
+1439827175 source:/home/artist/workspace/Graphgen/Grahpgen/main.cpp
+	<iostream>
+	"Node.h"
+	"Edge.h"
+	"Graphs.h"
+	"time.h"
+
+1439831006 source:/home/artist/workspace/Graphgen/Grahpgen/src/Edge.cpp
+	"Edge.h"
+	<string>
+
+1439830906 /home/artist/workspace/Graphgen/Grahpgen/include/Edge.h
+	"Node.h"
+	<string>
+	<utility>
+	<sstream>
+
+1440090963 source:/home/artist/workspace/Graphgen/Grahpgen/src/Graphs.cpp
+	"Graphs.h"
+
+1440091067 /home/artist/workspace/Graphgen/Grahpgen/include/Graphs.h
+	"Edge.h"
+	"Node.h"
+	<vector>
+	<list>
+	<cstdlib>
+	<string>
+	<time.h>
+	<iostream>
+	<fstream>
+
+1439831857 source:/home/artist/workspace/Graphgen/Grahpgen/src/Node.cpp
+	"Node.h"
+
+1439830863 /home/artist/workspace/Graphgen/Grahpgen/include/Node.h
+	<string>
+	<iostream>
+	<fstream>
+	<sstream>
+
+1440088806 source:/home/artist/workspace/Graphgen/Grahpgen/src/MyExceptions.cpp
+	"MyExceptions.h"
+
+1440089393 /home/artist/workspace/Graphgen/Grahpgen/include/MyExceptions.h
+	<iostream>
+	<exception>
+

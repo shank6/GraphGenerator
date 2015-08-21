@@ -1,0 +1,20 @@
+digraph g {
+size"6,10";
+a1 [ label= "a1" ];
+a2 [ label= "a2" ];
+a3 [ label= "a3" ];
+a4 [ label= "a4" ];
+a5 [ label= "a5" ];
+a6 [ label= "a6" ];
+
+a3 -> a5 [ label="ch1", taillabel="1", headlabel="1" ];
+a5 -> a5 [ label="ch2", taillabel="1", headlabel="1" ];
+a5 -> a6 [ label="ch3", taillabel="1", headlabel="1" ];
+a3 -> a4 [ label="ch4", taillabel="1", headlabel="1" ];
+a5 -> a2 [ label="ch5", taillabel="1", headlabel="1" ];
+a4 -> a1 [ label="ch6", taillabel="1", headlabel="1" ];
+a6 -> a1 [ label="ch7", taillabel="1", headlabel="1" ];
+a3 -> a2 [ label="ch8", taillabel="1", headlabel="1" ];
+a2 -> a5 [ label="ch9", taillabel="1", headlabel="1" ];
+a4 -> a6 [ label="ch10", taillabel="1", headlabel="1" ];
+}
