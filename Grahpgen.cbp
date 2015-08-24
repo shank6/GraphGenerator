@@ -37,10 +37,12 @@
 		<Unit filename="include/Edge.h" />
 		<Unit filename="include/Graphs.h" />
 		<Unit filename="include/Node.h" />
+		<Unit filename="include/SDFAnalysis.h" />
 		<Unit filename="main.cpp" />
 		<Unit filename="src/Edge.cpp" />
 		<Unit filename="src/Graphs.cpp" />
 		<Unit filename="src/Node.cpp" />
+		<Unit filename="src/SDFAnalysis.cpp" />
 		<Extensions>
 			<code_completion />
 			<debugger />

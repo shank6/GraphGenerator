@@ -21,8 +21,9 @@
 #include "Graphs.h"
 #include "time.h"
 
-#define MAX_NODES   7
-#define MAX_EDGES   10
+#define MAX_NODES   8
+#define MIN_NODES   5
+#define MAX_EDGES   2*MAX_NODES
 
 using namespace std;
 
@@ -30,15 +31,19 @@ int main()
 {
 
     cout << "Random graph Generator" << endl;
+    Node::buildDataBase(26*16);
+//    Node::printDataBase();
     srand(time(NULL));
-    uint Nodes = rand() % MAX_NODES + 1;
-    uint Edges = MAX_EDGES;
+    uint Nodes = (rand() % MAX_NODES )+ MIN_NODES;
+    //uint temp =  (rand() % MAX_EDGES );
+    uint Edges = (rand() % MAX_EDGES )+ Nodes - 1;
 
-    cout<< "NODES : " << Nodes << " Edges : " << Edges << endl;
-    Graphs g1;
-    g1.buildGraph(Nodes, MAX_EDGES);
-    g1.printGraph();
-    g1.printGraph("graph");
+//    cout<< "NODES : " << Nodes << " Edges : " << temp << "  " << Edges << endl;
+  Graphs g1;
+  g1.buildGraphAllConnected(Nodes, Edges);
+  g1.printGraph();
+  g1.printGraph("graph");
+
 
     return 0;
 }

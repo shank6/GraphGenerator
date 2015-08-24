@@ -8,7 +8,11 @@
 
 *****
     Nodes - List is used so that instertions and deletions of Nodes can be made easy
-    Edge -
+
+****
+ v0.2
+
+
 ***/
 
 
@@ -16,6 +20,7 @@
 #define GRAPHS_H
 #include "Edge.h"
 #include "Node.h"
+#include "SDFAnalysis.h"
 #include <vector>
 #include <list>
 #include <cstdlib>
@@ -27,7 +32,7 @@
 
 
 
-class Graphs
+class Graphs : public SDFAnalysis
 {
     public:
         Graphs();
@@ -38,23 +43,33 @@ class Graphs
         bool printGraph(const std::string filePath);
         void addNodestoGraph(Node &n);
         void addEdgestoGraph(Edge &e);
-     //   std::pair<uint, uint>* getsize();
+        void findandAddNodestoGraph(uint nodes_num);
+
         Node* findNode(std::vector<Node*>* node_list);
+        Node* findNode(std::vector<Node*>* node_list , Node* );  // overload findNode to find a suitable node for a channel
         void  makeEdge(Node* n1, Node* n2);
-        bool buildGraph(uint nodes_num, uint edges_num);
+         //   std::pair<uint, uint>* getsize();
+        /* Builds the graph */
         bool buildGraphAllConnected(uint nodes_num, uint edges_num);
+         //     bool buildGraph(uint nodes_num, uint edges_num);
+        /* A routine to find the position of the node in the list */
+        uint findNodePositionInList(Node* n, std::vector<Node*>* node_list);
+
         /*
         Graphs(const Graphs& other);
         Graphs& operator=(const Graphs& other);
         */
     protected:
+        uint NodePositionBuffer;   // A variable that holds the node index in vector to be deleted from the copy
     private:
 
     uint num_Nodes;
     uint num_Edges;
 
-   std::vector<Node*> nodes;
-   std::vector<Edge*> edges;
+    Node* firstNode;
+    Node* lastNode;
+    std::vector<Node*> nodes;
+    std::vector<Edge*> edges;
 
 
 };

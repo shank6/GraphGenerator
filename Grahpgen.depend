@@ -1,5 +1,5 @@
 # depslib dependency file v1.0
-1439827175 source:/home/artist/workspace/Graphgen/Grahpgen/main.cpp
+1440387638 source:/home/artist/workspace/Graphgen/Grahpgen/main.cpp
 	<iostream>
 	"Node.h"
 	"Edge.h"
@@ -16,12 +16,13 @@
 	<utility>
 	<sstream>
 
-1440090963 source:/home/artist/workspace/Graphgen/Grahpgen/src/Graphs.cpp
+1440431881 source:/home/artist/workspace/Graphgen/Grahpgen/src/Graphs.cpp
 	"Graphs.h"
 
-1440091067 /home/artist/workspace/Graphgen/Grahpgen/include/Graphs.h
+1440432196 /home/artist/workspace/Graphgen/Grahpgen/include/Graphs.h
 	"Edge.h"
 	"Node.h"
+	"SDFAnalysis.h"
 	<vector>
 	<list>
 	<cstdlib>
@@ -30,14 +31,16 @@
 	<iostream>
 	<fstream>
 
-1439831857 source:/home/artist/workspace/Graphgen/Grahpgen/src/Node.cpp
+1440350347 source:/home/artist/workspace/Graphgen/Grahpgen/src/Node.cpp
 	"Node.h"
 
-1439830863 /home/artist/workspace/Graphgen/Grahpgen/include/Node.h
+1440349565 /home/artist/workspace/Graphgen/Grahpgen/include/Node.h
 	<string>
 	<iostream>
 	<fstream>
+	<cstdlib>
 	<sstream>
+	<vector>
 
 1440088806 source:/home/artist/workspace/Graphgen/Grahpgen/src/MyExceptions.cpp
 	"MyExceptions.h"
@@ -45,4 +48,12 @@
 1440089393 /home/artist/workspace/Graphgen/Grahpgen/include/MyExceptions.h
 	<iostream>
 	<exception>
+
+1440432517 /home/artist/workspace/Graphgen/Grahpgen/include/SDFAnalysis.h
+	<vector>
+	"Node.h"
+	"Edge.h"
+
+1440350074 source:/home/artist/workspace/Graphgen/Grahpgen/src/SDFAnalysis.cpp
+	"SDFAnalysis.h"
 
